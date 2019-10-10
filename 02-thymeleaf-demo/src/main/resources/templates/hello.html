@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>标签基本使用</title>
+</head>
+<body>
+    this is a page
+    <ul th:each="i:${name}">
+        <li th:text="${i}"></li>
+    </ul>
+</body>
+</html>
