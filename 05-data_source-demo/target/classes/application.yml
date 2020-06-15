@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+first:
+  spring:
+    datasource:
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/webmagic
+secoed:
+  spring:
+    datasource:
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test
