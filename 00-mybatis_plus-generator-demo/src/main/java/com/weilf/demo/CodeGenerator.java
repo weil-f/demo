@@ -32,12 +32,12 @@ public class CodeGenerator {
     private static final String TABLE_PREFIX = "";
  
     //数据库
-    private static final String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&useSSL=false" +
+    private static final String url = "jdbc:mysql://localhost:3306/kds?useUnicode=true&useSSL=false" +
             "&characterEncoding=utf8";
     private static final String driverName = "com.mysql.jdbc.Driver";
     private static final String userName = "root";
     private static final String password = "root";
-    private static final String table_name = "user_info";
+    private static final String table_name = "partner_user_info";
  
  
     public static void main(String[] args){

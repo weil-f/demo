@@ -1,0 +1,21 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: security
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/kds?useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  thymeleaf:
+    cache: false
+    check-template: true
+    check-template-location: true
+    #开启MVC thymeleaf 视图解析
+    enabled: true
+    encoding: utf-8
+    mode: HTML5
+    prefix:
+      classpath:/templates/
+    suffix: .html

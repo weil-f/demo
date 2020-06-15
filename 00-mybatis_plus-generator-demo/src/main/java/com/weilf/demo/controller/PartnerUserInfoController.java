@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
- * 用户信息表 前端控制器
+ * 合伙人用户信息  前端控制器
  * </p>
  *
  * @author weil-f
- * @since 2019-10-29
+ * @since 2020-05-19
  */
 @RestController
-@RequestMapping("/userInfo")
-public class UserInfoController {
+@RequestMapping("/partnerUserInfo")
+public class PartnerUserInfoController {
 
 }
 
