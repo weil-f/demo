@@ -4,6 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    
     <artifactId>my-demo</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../011-algorithm</module>
+    </modules>
     <groupId>com.weilf.demo</groupId>
     <version>1.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>

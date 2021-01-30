@@ -1,5 +1,7 @@
 package com.weilf.test;
 
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -12,22 +14,27 @@ import java.util.Random;
  */
 public class Test {
 	public static void main(String[] args) {
-		ArrayList<String> iconList = new ArrayList<String>();
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/1.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/2.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/3.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/4.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/5.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/6.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/7.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/8.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/9.png");
-		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/10.png");
-		Random random = new Random();
-		for (int j = 0;j<100;j++){
-			int i = random.nextInt(iconList.size());
-			System.out.println(iconList.get(i));
-		}
-
+//		ArrayList<String> iconList = new ArrayList<String>();
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/1.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/2.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/3.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/4.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/5.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/6.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/7.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/8.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/9.png");
+//		iconList.add("https://siwujie.oss-cn-beijing.aliyuncs.com/juran/baisc/app/headericon/10.png");
+//		Random random = new Random();
+//		for (int j = 0;j<100;j++){
+//			int i = random.nextInt(iconList.size());
+//			System.out.println(iconList.get(i));
+//		}
+			test();
+	}
+	public static void test(){
+		String str = "123,";
+		System.out.println(str.indexOf(","));
+		System.out.println(str.contains(","));
 	}
 }

@@ -18,7 +18,7 @@ public class WebMagicTest {
         System.out.println("¿ªÊ¼ÅÀÈ¡Í¼Æ¬");
         MeiZiProcessor mzituProcessor = new MeiZiProcessor();
         Spider spider = Spider.create(mzituProcessor);
-        spider.addUrl("https://www.meizitu.com/");
+        spider.addUrl("https://www.mzitu.com/");
         spider.addPipeline(new ConsolePipeline());
         spider.thread(4);
         spider.start();
